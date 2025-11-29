@@ -271,12 +271,12 @@ document.addEventListener('DOMContentLoaded', function() {
             formDataToSend.append('phone', formData.phone || 'Not provided');
             formDataToSend.append('enquiry', formData.enquiry);
             formDataToSend.append('message', formData.message);
-            formDataToSend.append('_to', 'infor');
+            formDataToSend.append('_to', 'infor@ukuphiladev.co.za');
             formDataToSend.append('_subject', `New Contact Form Submission: ${formData.enquiry}`);
             formDataToSend.append('_template', 'table');
             
             // Send email using FormSubmit (SMTP)
-            fetch('https://formsubmit.co/ajax/xolinxiweni@gmail.com', {
+            fetch('https://formsubmit.co/ajax/infor@ukuphiladev.co.za', {
                 method: 'POST',
                 body: formDataToSend,
                 headers: {
@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 const errorMessage = document.createElement('div');
                 errorMessage.className = 'form-message error';
-                errorMessage.textContent = 'Sorry, there was an error sending your message. Please try again or contact us directly at xolinxiweni@gmail.com';
+                errorMessage.textContent = 'Sorry, there was an error sending your message. Please try again or contact us directly at infor@ukuphiladev.co.za';
                 contactForm.appendChild(errorMessage);
                 
                 // Re-enable submit button
