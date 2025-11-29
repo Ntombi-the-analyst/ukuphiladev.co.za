@@ -15,6 +15,30 @@
     --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
+::selection {
+    background: var(--teal);
+    color: var(--white);
+}
+::-webkit-scrollbar-track{
+    background: var(--white);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--teal);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--gold);
+}
+::-webkit-scrollbar-thumb:active{
+    background: var(--deep-teal);
+}
+::-webkit-scrollbar-thumb:focus{
+    background: var(--gold);
+}
+::-webkit-scrollbar-thumb:disabled{
+    background: var(--light-gold);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -237,7 +261,7 @@ body {
 
 /* Sections */
 .section {
-    padding: 6rem 5%;
+    padding: 2rem 5%;
 }
 
 .section-title {
@@ -412,6 +436,7 @@ body {
     grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .about-card {
@@ -426,6 +451,11 @@ body {
     margin-bottom: 0.5rem;
     font-family: var(--heading-font);
     color: var(--deep-teal);
+}
+
+.about-card ul {
+    list-style-type: none;
+    margin-bottom: 10px;
 }
 
 .about-cta {
